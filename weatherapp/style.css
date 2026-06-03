@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    transition:1s;
+}
+
+/* Background Themes */
+
+.default{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.sunny{
+    background:linear-gradient(135deg,#ffb347,#ffcc33);
+}
+
+.rainy{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.cloudy{
+    background:linear-gradient(135deg,#757f9a,#d7dde8);
+}
+
+/* Clouds */
+
+.cloud{
+    position:absolute;
+    width:180px;
+    height:60px;
+    background:white;
+    border-radius:100px;
+    opacity:.18;
+}
+
+.cloud1{
+    top:80px;
+    animation:moveCloud 25s linear infinite;
+}
+
+.cloud2{
+    top:220px;
+    animation:moveCloud 35s linear infinite;
+}
+
+.cloud3{
+    top:400px;
+    animation:moveCloud 45s linear infinite;
+}
+
+@keyframes moveCloud{
+    from{
+        left:-250px;
+    }
+    to{
+        left:110%;
+    }
+}
+
+.container{
+    width:420px;
+    padding:20px;
+}
+
+.weather-card{
+
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 8px 32px rgba(0,0,0,.25);
+
+    animation:popup .8s ease;
+}
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+}
+
+.search-box button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.search-box button:hover{
+
+    transform:scale(1.05);
+}
+
+#weatherIcon{
+    width:120px;
+}
+
+#temperature{
+    font-size:60px;
+}
+
+.details{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:25px;
+
+    gap:10px;
+}
+
+.detail-box{
+
+    flex:1;
+
+    background:rgba(255,255,255,.12);
+
+    padding:15px;
+
+    border-radius:15px;
+}
+
+.sun-card{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    background:rgba(255,255,255,.12);
+
+    padding:15px;
+
+    border-radius:15px;
+}
+
+#dateTime{
+    margin-top:10px;
+    opacity:.9;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="default">
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<div class="container">
+
+    <div class="weather-card">
+
+        <h1>☁ Weather App</h1>
+
+        <p id="dateTime"></p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+
+        <img id="weatherIcon" src="" alt="">
+
+        <h2 id="cityName">
+            Search a City
+        </h2>
+
+        <h1 id="temperature">
+            --°C
+        </h1>
+
+        <p id="condition">
+            Weather Condition
+        </p>
+
+        <div class="details">
+
+            <div class="detail-box">
+                <span>🌡️</span>
+                <p id="feelsLike">--°C</p>
+                <small>Feels Like</small>
+            </div>
+
+            <div class="detail-box">
+                <span>💧</span>
+                <p id="humidity">--%</p>
+                <small>Humidity</small>
+            </div>
+
+            <div class="detail-box">
+                <span>🌬️</span>
+                <p id="wind">-- km/h</p>
+                <small>Wind</small>
+            </div>
+
+        </div>
+
+        <div class="sun-card">
+
+            <div>
+                <h3>🌅 Sunrise</h3>
+                <p id="sunrise">--</p>
+            </div>
+
+            <div>
+                <h3>🌇 Sunset</h3>
+                <p id="sunset">--</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
