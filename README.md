@@ -38,3 +38,5 @@ Weather information is fetched in real time using the WeatherAPI service.
 
 This project was developed to practice API integration, asynchronous JavaScript, DOM manipulation, responsive web design, and modern UI/UX concepts.
 
+## Output
+<img width="1773" height="871" alt="image" src="https://github.com/user-attachments/assets/ac66e365-6d87-4181-bdc1-44c3abb877d7" />
